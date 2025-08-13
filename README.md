@@ -1,5 +1,40 @@
-# Vue 3 + Vite
+# 🩺 MediClassAI - Interface Clinique
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<div align="center">
+  <img src="https://i.imgur.com/JDQ5i58.png" alt="Capture d'écran" width="600">
+</div>
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## ✨ Fonctionnalités
+- **Saisie intuitive** de comptes-rendus médicaux
+- **Visualisation des résultats** par spécialité
+- Historique des analyses
+- Mode sombre/clair
+
+## 🛠 Stack Technique
+```mermaid
+graph TD
+    A[Vue.js 3] --> B[Vite]
+    A --> C[Axios]
+    A --> D[TailwindCSS]
+```
+
+## 🚀 Déploiement
+```
+# Variables d'environnement
+VITE_API_URL = "https://medi-class-ai-back.onrender.com"
+```
+
+## 🏗 Installation Locale
+```
+git clone https://github.com/votre-user/medi-class-ai-front.git
+cd medi-class-ai-front
+npm install
+npm run dev
+```
+
+## 🔗 Liens Importants
+- Backend : GitHub
+
+- API Docs : Swagger
+
+- Figma : Maquettes
