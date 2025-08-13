@@ -32,9 +32,16 @@ npm install
 npm run dev
 ```
 
-## 🔗 Liens Importants
-- Backend : GitHub
+## 🤝 Contribution
+1. Forkez le projet
+2. Créez une branche (`git checkout -b feat/ma-fonctionnalite`)
+3. Committez (`git commit -m 'Ajout: Nouvelle fonctionnalité'`)
+4. Pushez (`git push origin feat/ma-fonctionnalite`)
+5. Ouvrez une Pull Request
 
-- API Docs : Swagger
+## 📜 License
+MIT © [Yann SALAKO](https://github.com/Yann2808/medi-class-ai-front)
 
-- Figma : Maquettes
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/yann-salako)
+
+[![MediClassAI System](https://img.shields.io/badge/ARCHITECTURE-Frontend_+_Backend-8A2BE2)](https://github.com/Yann2808/medi-class-ai-back#readme)
