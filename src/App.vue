@@ -1,22 +1,14 @@
 <template>
   <div class="container">
     <h1>MediClassAI</h1>
-    <p>Classification de textes médicaux</p>
-    
-    <textarea v-model="inputText" placeholder="Collez un compte-rendu médical ici..."></textarea>
+    <textarea v-model="inputText" placeholder="Collez un compte-rendu médical..."></textarea>
     <button @click="classifyText">Analyser</button>
     
+    <div v-if="loading" class="loading">Analyse en cours...</div>
+    
     <div v-if="result" class="result">
-      <h2>Résultats:</h2>
-      <p><strong>Spécialité(s) détectée(s):</strong> {{ result.detected_fields.join(', ') }}</p>
-      <div v-if="result.entities.length">
-        <h3>Entités reconnues:</h3>
-        <ul>
-          <li v-for="(entity, index) in result.entities" :key="index">
-            {{ entity[0] }} ({{ entity[1] }})
-          </li>
-        </ul>
-      </div>
+      <h2>Résultats :</h2>
+      <p>Spécialité(s) : {{ result.detected_fields.join(', ') }}</p>
     </div>
   </div>
 </template>
@@ -67,10 +59,15 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+.loading {
+  color: #42b983;
+  font-weight: bold;
+}
+
 .result {
   margin-top: 20px;
   padding: 15px;
-  background: #f5f5f5;
-  border-radius: 4px;
+  border-left: 4px solid #42b983;
+  background: #f8f9fa;
 }
 </style>
